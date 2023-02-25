@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import classes from './Notes.module.css';
 import NoteContext from '../../store/note-context';
 
