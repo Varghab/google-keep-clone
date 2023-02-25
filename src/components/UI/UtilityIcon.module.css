@@ -1,0 +1,25 @@
+.utilityWrapper{
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px
+}
+.utilityIcon{
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 50%;
+    transition: .1s all ease-in-out;
+    cursor: pointer;
+}
+
+.utilityIcon:hover{
+    background-color: inherit;
+    color: black;
+}
+
+@media only screen and (max-width:560px) {
+    .utilityIcon{
+        font-size: 15px;
+    }
+}

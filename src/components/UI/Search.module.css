@@ -1,0 +1,20 @@
+.searchWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    position: relative;
+    bottom: 0;
+}
+
+input{
+    padding: 12px 11px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    width: 100%;
+    min-width: 50px;
+    background-color: rgb(232, 232, 232);
+}
+

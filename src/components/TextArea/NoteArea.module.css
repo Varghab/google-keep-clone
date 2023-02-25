@@ -1,0 +1,104 @@
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    margin-left: 100px;
+    width: 100%;
+    background-color: inherit;
+    height: auto;
+}
+
+.noteArea{
+    background-color: inherit;
+    margin: 100px auto;
+    width: 80%;
+    max-width: 30rem;
+    min-width: 18rem;
+    border-radius: 8px;
+    padding: 12px 13px;
+    box-shadow: 0px 2px 10px -1px rgb(174, 174, 174);
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-text)
+}
+
+.textArea{
+    display: block;
+    outline: none;
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 5px 7px;
+    font-size: 18px;
+    font-family: inherit;
+    border-radius: 4px;
+    min-height: 150px;
+    /* height: auto; */
+    border: none;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    white-space: normal;
+    resize: none;
+    width: 100%;
+
+}
+
+.textArea[contenteditable]{
+    width: 100%;
+}
+.textAreaHidden{
+    display: none;
+}
+.inputBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.noteTitle{
+    font-size: 20px !important;
+    padding: 8px 6px;
+    background: none;
+}
+
+.notesWrapper{
+    margin: 20px auto;
+    width: 100%;
+    max-width: 80rem;
+    height: auto;
+}
+
+.noteBtnWrapperHidden{
+    display: none;
+}
+
+.noteBtnWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.noteBtn{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 6px;
+    background-color: inherit;
+    font-size: 1.2em;
+    width: 5em;
+    border: .5px solid grey;
+    transition: .2s all ;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.noteBtn:hover{
+    box-shadow: 1px 2px 10px -2px rgb(110, 110, 110);
+}
+
+.noteError{
+    color: red;
+    padding: 0 0 0 5px;
+}
